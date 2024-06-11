@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'pesquisa-digimon',
-    loadChildren: () => import('./pesquisa-digimon/pesquisa-digimon.module').then( m => m.PesquisaDigimonPageModule)
-  },
-  {
     path: 'digimon-pesquisa',
     loadChildren: () => import('./digimon-pesquisa/digimon-pesquisa.module').then( m => m.DigimonPesquisaPageModule)
   },

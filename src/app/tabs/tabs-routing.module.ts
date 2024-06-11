@@ -20,6 +20,26 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'digimon-pesquisa',
+        loadChildren: () => import('../digimon-pesquisa/digimon-pesquisa.module').then( m => m.DigimonPesquisaPageModule)
+      },
+      {
+        path: 'digimon-lista',
+        loadChildren: () => import('../digimon-lista/digimon-lista.module').then( m => m.DigimonListaPageModule)
+      },
+      {
+        path: 'digimon-detalhe',
+        loadChildren: () => import('../digimon-detalhe/digimon-detalhe.module').then( m => m.DigimonDetalhePageModule)
+      },
+      {
+        path: 'digimon-deck',
+        loadChildren: () => import('../digimon-deck/digimon-deck.module').then( m => m.DigimonDeckPageModule)
+      },
+      {
+        path: 'digimon-deck-card',
+        loadChildren: () => import('../digimon-deck-card/digimon-deck-card.module').then( m => m.DigimonDeckCardPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
